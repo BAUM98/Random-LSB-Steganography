@@ -19,24 +19,24 @@ class UIElements:
             sg.FolderBrowse(),
         ],
         [
-            sg.Text("Password (optional)", key="-PASSWDBOX-", size=(15,1)),
+            sg.Text("Password (optional)", key="-Password Box-", size=(15,1)),
             sg.In(size=(25, 1), enable_events=True, key="-PASSWORD-"),
         ]
     ]
 
     __input_out_box = [
         [
-            sg.Text("Embedded File", key="-Embedded-", size=(15,1)),
-            sg.In(size=(25, 1), enable_events=True, key="-FILE11-"),
+            sg.Text("Embedded File", key="-Stego Image-", size=(15,1)),
+            sg.In(size=(25, 1), enable_events=True, key="-STEGOIMAGE-"),
             sg.FileBrowse(),
         ],
         [
-            sg.Text("Output Folder", key="-DecodeOutput-", size=(15,1)),
-            sg.In(size=(25, 1), enable_events=True, key="-FOLDER11-"),
+            sg.Text("Decoded File", key="-Decoded Output-", size=(15,1)),
+            sg.In(size=(25, 1), enable_events=True, key="-DECODEDOUTPUT-"),
             sg.FolderBrowse(),
         ],
         [
-            sg.Text("Password (optional)", key="-PASSWDBOX2-", size=(15,1)),
+            sg.Text("Password (optional)", key="-Password Box 2-", size=(15,1)),
             sg.In(size=(25, 1), enable_events=True, key="-PASSWORD2-"),
         ]
     ]

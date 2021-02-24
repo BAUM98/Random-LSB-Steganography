@@ -23,10 +23,10 @@ def runWindow():
                 mode = Encoder(values["-COVERIMAGE-"], values["-MESSAGE-"], values["-OUTPUTFOLDER-"])
             mode.run()
         if event == "Decode":
-            if values["-PASSWORD-"] != '':
-                mode = Decoder(values["-FILE11-"], values["-FOLDER11-"], values["-PASSWORD2-"])
+            if values["-PASSWORD2-"] != '':
+                mode = Decoder(values["-STEGOIMAGE-"], values["-DECODEDOUTPUT-"], values["-PASSWORD2-"])
             else:
-                mode = Decoder(values["-FILE11-"], values["-FOLDER11-"])
+                mode = Decoder(values["-STEGOIMAGE-"], values["-DECODEDOUTPUT-"])
             mode.run()  
     window.close()
     

@@ -21,7 +21,6 @@ class Encoder:
         self.__message = message
         self.__outputDir = outputDir
         self.__password = password
-        print(self.__password)
     
     def run(self):
         #Step 1: Generate password and verification key hashes
